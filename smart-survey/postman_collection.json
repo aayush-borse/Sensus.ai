@@ -1,0 +1,114 @@
+{
+  "info": {
+    "name": "Neksha Ai API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Signup",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\\\"name\\\":\\\"Tester\\\",\\\"email\\\":\\\"tester@neksha.ai\\\",\\\"password\\\":\\\"pass123\\\"}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/v1/auth/signup",
+          "host": [
+            "http://localhost:5000/api/v1/auth/signup"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\\\"email\\\":\\\"admin@neksha.ai\\\",\\\"password\\\":\\\"adminpass\\\"}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/v1/auth/login",
+          "host": [
+            "http://localhost:5000/api/v1/auth/login"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Questions",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5000/api/v1/survey/questions?surveyId=svy_123&lang=en",
+          "host": [
+            "http://localhost:5000/api/v1/survey/questions?surveyId=svy_123&lang=en"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Submit Response",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"surveyId\": \"svy_123\", \"deviceId\": \"dev1\", \"language\": \"en\", \"answers\": [{\"questionId\": \"q1\", \"value\": \"Ram\"}, {\"questionId\": \"q2\", \"value\": 27}, {\"questionId\": \"q3\", \"value\": \"Male\"}], \"location\": {\"lat\": 18.5, \"lng\": 73.8, \"accuracy\": 5, \"timestamp\": 1755616584}}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/v1/survey/submit",
+          "host": [
+            "http://localhost:5000/api/v1/survey/submit"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Admin Bar Visual",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5000/api/v1/admin/visuals/bar?surveyId=svy_123&questionId=q3",
+          "host": [
+            "http://localhost:5000/api/v1/admin/visuals/bar?surveyId=svy_123&questionId=q3"
+          ]
+        }
+      }
+    }
+  ]
+}
