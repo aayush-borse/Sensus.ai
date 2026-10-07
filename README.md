@@ -28,8 +28,8 @@ Traditional, static survey forms are boring, impersonal, and often result in low
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/aayush-borse/Neksha_Ai.git](https://github.com/aayush-borse/Neksha_Ai.git)
-    cd Neksha_Ai
+    git clone [https://github.com/aayush-borse/Sensus.Ai.git](https://github.com/aayush-borse/Sensus.Ai.git)
+    cd Sensus.Ai
     ```
 
 2.  **Set up the Backend:**
