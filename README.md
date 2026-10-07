@@ -1,4 +1,4 @@
- Conversational Survey AI: A Multilingual Chatbot for Dynamic Data Collection
+Sensus AI: A Multilingual Chatbot for Dynamic Data Collection
 
 
  The Problem
@@ -7,7 +7,7 @@ Traditional, static survey forms are boring, impersonal, and often result in low
 
  The Solution
 
-Our project, **Conversational Survey AI**, is an end-to-end platform that modernizes data collection. We replace rigid forms with an intelligent, multilingual chatbot that engages users in a natural, conversational dialogue. Our system goes beyond simple data collection, using AI to deliver authentic, insightful data ready for analysis.
+**Sensus Ai**, is an end-to-end platform that modernizes data collection. We replace rigid forms with an intelligent, multilingual chatbot that engages users in a natural, conversational dialogue. Our system goes beyond simple data collection, using AI to deliver authentic, insightful data ready for analysis.
 
  Key Features
 
